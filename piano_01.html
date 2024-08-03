@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+    <title>Pianist: Virtual Piano</title>
+    <!--
+    <style>
+    .sidebar h3 {
+    font-weight: bold; 
+    font-family: 'Dancing Script', cursive;
+    }
+    </style>-->
+    <link rel="stylesheet" href="piano_01.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <img style="width:110px; height:80px;" src="https://th.bing.com/th/id/OIP.zH8wNjDzbHNQQK2-OJmTJQHaHa?pid=ImgDet&w=640&h=640&rs=1">
+            <li><a href="Home_01.html">Home</a></li>
+            <li><a href="piano_01.html">Music</a></li>
+            <li><a href="Contact_01.html">Contact</a></li>
+            <li><a href="About_01.html">About</a></li>
+        </ul>
+        <ul>
+            <li>
+                <img title="IT homies" style="height: 30px; width: 30px; border-radius: 30px; padding-top: 5px ;" alt="IT Homies" src="https://th.bing.com/th/id/OIP.XA6EcH_6e2nRp0fXgBBk0gHaHS?pid=ImgDet&w=207&h=203&c=7&dpr=1.3"></a>
+                <li><a class="sign" href="signup_01.html">Create account</a></li>
+                <li><a class="sign" href="login_02.php">Log in</a></li>
+            </li>
+        </ul>
+    </div>
+    <div class="main-contents">
+        <div class="topic"><p style="font-weight: bold; color: rgb(168, 115, 218); font-size: 18px; font-family: 'Dancing Script', cursive;">Welcome to Pianist! <p>
+        <p style="line-height: 1.5; "><span class="indented_1"></span>Welcome to Pianist! Our Virtual Piano lets you play on your computer or laptop keyboard. 
+        Enjoy a special feature: registered users can <i>download music</i>, enhancing skills and musical enjoyment.</p>
+        </div>
+        <div class="keys">
+            <div id="block-keys">
+                <button id="button1" onclick="handleButtonClick('button1')" class="block-key-1"><b>1<br><br>C3#</b></button>
+                <button id="button2" onclick="handleButtonClick('button2')" class="block-key-2"><b>2<br><br>D3#</b></button>
+                <button id="buttonA" onclick="handleButtonClick('buttonA')" class="block-key-a"><b>a<br><br>F3#</b></button>
+                <button id="buttonS" onclick="handleButtonClick('buttonS')" class="block-key-s"><b>s<br><br>G3#</b></button>
+                <button id="buttonD" onclick="handleButtonClick('buttonD')" class="block-key-d"><b>d<br><br>A3#</b></button>
+                <button id="buttonF" onclick="handleButtonClick('buttonF')" class="block-key-f"><b>f<br><br>C3#</b></button>
+                <button id="buttonG" onclick="handleButtonClick('buttonG')" class="block-key-g"><b>g<br><br>D4#</b></button>
+                <button id="buttonH" onclick="handleButtonClick('buttonH')" class="block-key-h"><b>h<br><br>F4#</b></button>
+                <button id="buttonJ" onclick="handleButtonClick('buttonJ')" class="block-key-j"><b>j<br><br>G4#</b></button>
+                <button id="buttonK" onclick="handleButtonClick('buttonK')" class="block-key-k"><b>k<br><br>A4#</b></button>
+                <button id="buttonL" onclick="handleButtonClick('buttonL')" class="block-key-l"><b>l<br><br>C5#</b></button>
+                <button id="button;" onclick="handleButtonClick('button;')" class="block-key-;"><b>;<br><br>D5#</b></button>
+                <button id="button8" onclick="handleButtonClick('button8')" class="block-key-8"><b>8<br><br>F5#</b></button>
+                <button id="button9" onclick="handleButtonClick('button9')" class="block-key-9"><b>9<br><br>G5#</b></button>
+                <button id="button0" onclick="handleButtonClick('button0')" class="block-key-0"><b>0<br><br>A5#</b></button>
+            </div>
+            
+            <div id="white-keys">
+                <button id="buttonQ" onclick="handleButtonClick('buttonQ')" class="white-key"><b>q<br><br>C3</b></button>
+                <button id="buttonW" onclick="handleButtonClick('buttonW')" class="white-key"><b>w<br><br>D3</b></button>
+                <button id="buttonE" onclick="handleButtonClick('buttonE')" class="white-key"><b>e<br><br>E3</b></button>
+                <button id="buttonR" onclick="handleButtonClick('buttonR')" class="white-key"><b>r<br><br>F3</b></button>
+                <button id="buttonT" onclick="handleButtonClick('buttonT')" class="white-key"><b>t<br><br>G3</b></button>
+                <button id="buttonY" onclick="handleButtonClick('buttonY')" class="white-key"><b>y<br><br>A3</b></button>
+                <button id="buttonU" onclick="handleButtonClick('buttonU')" class="white-key"><b>u<br><br>B3</b></button>
+                <button id="buttonI" onclick="handleButtonClick('buttonI')" class="white-key"><b>i<br><br>C4</b></button>
+                <button id="buttonO" onclick="handleButtonClick('buttonO')" class="white-key"><b>o<br><br>D4</b></button>
+                <button id="buttonP" onclick="handleButtonClick('buttonP')" class="white-key"><b>p<br><br>E4</b></button>
+                <button id="button[" onclick="handleButtonClick('button[')" class="white-key"><b>[<br><br>F4</b></button>
+                <button id="button]" onclick="handleButtonClick('button]')" class="white-key"><b>]<br><br>G4</b></button>
+                <button id="buttonZ" onclick="handleButtonClick('buttonZ')" class="white-key"><b>z<br><br>A4</b></button>
+                <button id="buttonX" onclick="handleButtonClick('buttonX')" class="white-key"><b>x<br><br>B4</b></button>
+                <button id="buttonC" onclick="handleButtonClick('buttonC')" class="white-key"><b>c<br><br>C5</b></button>
+                <button id="buttonV" onclick="handleButtonClick('buttonV')" class="white-key"><b>v<br><br>D5</b></button>
+                <button id="buttonB" onclick="handleButtonClick('buttonB')" class="white-key"><b>b<br><br>E5</b></button>
+                <button id="buttonN" onclick="handleButtonClick('buttonN')" class="white-key"><b>n<br><br>F5</b></button>
+                <button id="buttonM" onclick="handleButtonClick('buttonM')" class="white-key"><b>m<br><br>G5</b></button>
+                <button id="button," onclick="handleButtonClick('button,')" class="white-key"><b>,<br><br>A5</b></button>
+                <button id="button." onclick="handleButtonClick('button.')" class="white-key"><b>.<br><br>B5</b></button>
+            </div>            
+        </div>
+        <div id="audios">
+            
+                <audio id="audio_q" src="203479__tesabob2001__c3.mp3"></audio>
+                <audio id="audio_w" src="203486__tesabob2001__d3.mp3"></audio>
+                <audio id="audio_e" src="203470__tesabob2001__e3.mp3"></audio>
+                <audio id="audio_r" src="203468__tesabob2001__f3.mp3"></audio>
+                <audio id="audio_t" src="203493__tesabob2001__g3.mp3"></audio>
+                <audio id="audio_y" src="203458__tesabob2001__a3.mp3"></audio>
+                <audio id="audio_u" src="203463__tesabob2001__b3.mp3"></audio>
+                <audio id="audio_i" src="203478__tesabob2001__c4.mp3"></audio>
+                <audio id="audio_o" src="203482__tesabob2001__d4.mp3"></audio>
+                <audio id="audio_p" src="203471__tesabob2001__e4.mp3"></audio>
+                <audio id="audio_[" src="203500__tesabob2001__f4.mp3"></audio>
+                <audio id="audio_]" src="203492__tesabob2001__g4.mp3"></audio>
+                <audio id="audio_z" src="203465__tesabob2001__a4.mp3"></audio>
+                <audio id="audio_x" src="203462__tesabob2001__b4.mp3"></audio>
+                <audio id="audio_c" src="203485__tesabob2001__c5.mp3"></audio>
+                <audio id="audio_v" src="203473__tesabob2001__d5.mp3"></audio>
+                <audio id="audio_b" src="203476__tesabob2001__e5.mp3"></audio>
+                <audio id="audio_n" src="203489__tesabob2001__f5.mp3"></audio>
+                <audio id="audio_m" src="203495__tesabob2001__g5.mp3"></audio>
+                <audio id="audio_," src="203464__tesabob2001__a5.mp3"></audio>
+                <audio id="audio_." src="203467__tesabob2001__b5.mp3"></audio>
+
+                <audio id="audio_1" src="203466__tesabob2001__c3z.mp3"></audio>
+                <audio id="audio_2" src="203489__tesabobe2001__d3z.mp3"></audio>
+                <audio id="audio_a" src="203501__tesabob2001__f3z.mp3"></audio>
+                <audio id="audio_s" src="203488__tesabob2001__g3z.mp3"></audio>
+                <audio id="audio_d" src="203502__tesabob2001__a3z.mp3"></audio>
+                <audio id="audio_f" src="203481__tesabob2001__c4z.mp3"></audio>
+                <audio id="audio_g" src="203482__tesabob2001__d4z.mp3"></audio>
+                <audio id="audio_h" src="203500__tesabob2001__f4.mp3"></audio>
+                <audio id="audio_j" src="203491__tesabob2001__g4z.mp3"></audio>
+                <audio id="audio_k" src="203460__tesabob2001__a4z.mp3"></audio>
+                <audio id="audio_l" src="203480__tesabob2001__c5z.mp3"></audio>
+                <audio id="audio_;" src="203487__tesabob2001__d5z.mp3"></audio>
+                <audio id="audio_8" src="203499__tesabob2001__f5z.mp3"></audio>
+                <audio id="audio_9" src="203490__tesabob2001__g5z.mp3"></audio>
+                <audio id="audio_0" src="203459__tesabob2001__a5z.mp3"></audio>           
+        </div>        
+        <div class="sidebar">
+            <h3 id="sidebar-title">Welcome</h3>
+            <div><h3>Welcome to Pianist</h3><p>Welcome. Here you can practice and improve your music ability.</p></div><hr>
+            <div><h3>Clear cut Sound</h3><p>Our website has high quality musics with perfect timing,This is a best place to you to practice your music ability.</p></div><hr>
+            <div><h3>Key-letters</h3>We are providing you key letters for corresponding piano keys.</div><hr>
+            <div><h3>FeedBack</h3>If you have any queries or comments, you can send a mail to pianist123@gmail.com.</div>
+        </div>
+
+        <div class="ending">
+            <p style="text-align: center; font-size: 20px; font-weight: bold; color: rgb(168, 115, 218);">HOW TO PLAY THE PIANO
+            <br><span  style="font-family: 'Dancing Script', cursive;">IN LESS THAN ONE MINUTE WITHOUT A PIANO</span></p><hr>
+            <div id="ending_1"><p style="line-height: 1.3;"><span class="indented"></span>Anyone can experience the piano through Virtual Piano. You don't need 
+            to be able to read music or to have played the piano before. Virtual Piano music sheets 
+            contain letters that correspond to the keys from a QWERTY keyboard. So it's quick and simple 
+            to pick up. You can enjoy playing the piano instantly - anywhere, anytime. So, ready to begin?</p></div>
+            <div id="ending_2"><p style="line-height: 1.3;"><span class="indented"></span>Learn to play the piano instantly on <i>Virtual Piano</i>. 
+            Become an online pianist and create your own extraordinary music! The platform enables you to play the piano 
+            instantly on your computer or laptop keyboard.<i>It is free</i> to use by anyone, anywhere, anytime.
+            Amplify your imagination, creativity and a new love for music. Begin today.</p></div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright 1999-2023 by Musicca Data. All Rights Reserved.<br>Pianist is Powered by IT Homies.</p>
+        <img style="width:100px; height:60px;" src="https://th.bing.com/th/id/OIP.zH8wNjDzbHNQQK2-OJmTJQHaHa?pid=ImgDet&w=640&h=640&rs=1">
+    </div>
+
+    <script src="piano_01.js"></script> 
+</body>
+</html> 
